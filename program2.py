@@ -71,6 +71,12 @@ def qTen():
         return right
     else: return wrong
 
+def rightAnswer ():
+    print ("That's right! You're a Genius!")
+
+def wrongAnswer (_answer):
+    print (f"The correct answer is, {_answer}. Don't worry! you'll get it next time.")
+
 
 # variables for 20 random numbers
 a = getRandomNumbers ()
@@ -94,19 +100,6 @@ r = getRandomNumbers ()
 s = getRandomNumbers ()
 t = getRandomNumbers ()
 
-# 10 questions
-header ()
-firstQ = getQuestions (a,b)
-secondQ = getQuestions (c,d)
-thirdQ = getQuestions (e,f)
-fourthQ = getQuestions (g,h)
-fifthQ = getQuestions (i,j)
-sixthQ = getQuestions (k,l)
-seventhQ = getQuestions (m,n)
-eighthQ = getQuestions (o,p)
-ninthQ = getQuestions (q,r)
-tenthQ = getQuestions (s,t)
-
 # Answer Key
 resultAB = correctAnswers (a,b)
 resultCD = correctAnswers (c,d)
@@ -118,6 +111,61 @@ resultMN = correctAnswers (m,n)
 resultOP = correctAnswers (o,p)
 resultQR = correctAnswers (q,r)
 resultST = correctAnswers (s,t)
+
+# 10 questions
+
+header ()
+
+firstQ = getQuestions (a,b)
+if firstQ == resultAB:
+     rightAnswer()
+else: wrongAnswer (resultAB)
+
+secondQ = getQuestions (c,d)
+if secondQ == resultCD:
+     rightAnswer()
+else: wrongAnswer (resultCD)
+
+thirdQ = getQuestions (e,f)
+if thirdQ == resultEF:
+     rightAnswer()
+else: wrongAnswer (resultEF)
+
+fourthQ = getQuestions (g,h)
+if fourthQ == resultGH:
+     rightAnswer()
+else: wrongAnswer (resultGH)
+
+fifthQ = getQuestions (i,j)
+if fifthQ == resultIJ:
+     rightAnswer()
+else: wrongAnswer (resultIJ)
+
+sixthQ = getQuestions (k,l)
+if sixthQ == resultKL:
+     rightAnswer()
+else: wrongAnswer (resultKL)
+
+seventhQ = getQuestions (m,n)
+if seventhQ == resultMN:
+     rightAnswer()
+else: wrongAnswer (resultMN)
+
+eighthQ = getQuestions (o,p)
+if eighthQ == resultOP:
+     rightAnswer()
+else: wrongAnswer (resultOP)
+
+ninthQ = getQuestions (q,r)
+if ninthQ == resultQR:
+     rightAnswer()
+else: wrongAnswer (resultQR)
+
+tenthQ = getQuestions (s,t)
+if tenthQ == resultST:
+     rightAnswer()
+else: wrongAnswer (resultST)
+
 
 # result score
 right, wrong = pointing ()
@@ -133,5 +181,5 @@ I = qNine ()
 J = qTen ()
 
 #other
-score = A + B + C + D + E + F + H + J
+score = A + B + C + D + E + F + G + H + I + J
 resultSummary (score)
