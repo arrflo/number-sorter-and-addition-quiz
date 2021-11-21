@@ -36,7 +36,6 @@ def getNumberSorter(a,b,c,d):
                         if d >= b >= c:
                             return a, d, b, c
                         else: #d>c>b
-                            if d >= c >= b:
                                 return a, d, c, b
     else: # b ang highest
         if b >= a and b >= c and b >= d:
@@ -56,7 +55,6 @@ def getNumberSorter(a,b,c,d):
                             if d >= a >= c:
                                 return b, d, a, c
                             else:   #d>c>a
-                                if d >= c >= a:
                                     return b, d, c, a   
         else: # c ang highest
             if c >= a and c >= b and c >= d:
@@ -76,7 +74,6 @@ def getNumberSorter(a,b,c,d):
                                 if d >= a >= b:
                                     return c, d, a, b
                                 else:   #d>b>a
-                                    if d >= b >= a:
                                         return c, d, b, a
             else: # d ang highest
                 if d >= a and d >= b and d >= c:
@@ -96,9 +93,7 @@ def getNumberSorter(a,b,c,d):
                                     if c >= a >= b:
                                         return d, c, a, b
                                     else:   #c>b>a
-                                        if c >= b >= a:
                                             return d, c, b, a  
-
 
 # Print the 4 numbers from highest to lowest using only if-else statement.
 first, second, third, fourth = getNumber()
