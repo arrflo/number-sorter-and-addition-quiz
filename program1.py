@@ -8,6 +8,8 @@ def getNumber ():
     _third = int(input("Third Number:"))
     _fourth = int(input("Fourth Number:"))
     return _first, _second, _third, _fourth
+
+
 #other function
 def display (arrangement):
     print (f"The arrangement of the four numbers from highest to lowest is as follows: {arrangement}.")
@@ -15,11 +17,7 @@ def display (arrangement):
 
 
 # function for if-else, tas yung sa arrangement
-def getNumberSorter(a, b, c, d):
-    a = first
-    b = second
-    c = third
-    d = fourth
+def getNumberSorter(a,b,c,d):
     # a ang highest
     if a >= b and a >= c and a >= d:  
         #b>c>d  
@@ -101,8 +99,8 @@ def getNumberSorter(a, b, c, d):
                                         if c >= b >= a:
                                             return d, c, b, a  
 
+
 # Print the 4 numbers from highest to lowest using only if-else statement.
 first, second, third, fourth = getNumber()
 arrange = getNumberSorter (first, second, third, fourth)
 display (arrange)
-
