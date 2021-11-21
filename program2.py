@@ -18,6 +18,10 @@ def getQuestions (addend, augend):
     _question = int(input (f"{addend} + {augend} ="))
     return _question
 
+def correctAnswers (addend1, augend1):
+    _result = addend1 + augend1
+    return _result
+
 # variables for 20 random numbers
 a = getRandomNumbers ()
 b = getRandomNumbers ()
@@ -52,3 +56,16 @@ seventhQ = getQuestions (m,n)
 eighthQ = getQuestions (o,p)
 ninthQ = getQuestions (q,r)
 tenthQ = getQuestions (s,t)
+
+# Answer Key
+resultAB = correctAnswers (a,b)
+resultCD = correctAnswers (c,d)
+resultEF = correctAnswers (e,f)
+resultGH = correctAnswers (g,h)
+resultIJ = correctAnswers (i,j)
+resultKL = correctAnswers (k,l)
+resultMN = correctAnswers (m,n)
+resultOP = correctAnswers (o,p)
+resultQR = correctAnswers (q,r)
+resultST = correctAnswers (s,t)
+
