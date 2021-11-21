@@ -14,12 +14,12 @@ def header ():
     print ("Addition Quiz")
     print ("Answer the following questions correctly.")
 
-def getQuestions (addend, augend):
-    _question = int(input (f"{addend} + {augend} ="))
+def getQuestions (augend, addend):
+    _question = int(input (f"{augend} + {addend} ="))
     return _question
 
-def correctAnswers (addend1, augend1):
-    _result = int (addend1 + augend1)
+def correctAnswers (augend1, addend1):
+    _result = int (augend1 + addend1)
     return _result
 
 def resultSummary(_score):
