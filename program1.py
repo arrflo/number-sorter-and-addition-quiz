@@ -15,7 +15,6 @@ def display (arrangement):
     print (f"The arrangement of the four numbers from highest to lowest is as follows: {arrangement}.")
 
 
-
 # function for if-else, tas yung sa arrangement
 def getNumberSorter(a,b,c,d):
     # a ang highest
@@ -76,24 +75,24 @@ def getNumberSorter(a,b,c,d):
                                 else:   #d>b>a
                                         return c, d, b, a
             else: # d ang highest
-                if d >= a and d >= b and d >= c:
-                     #a>b>c
-                    if a >= b >= c:
-                        return d, a, b, c
-                    else: #a>c>b
-                        if a >= c >= b:
-                            return d, a, c, b
-                        else: #b>a>c 
-                            if b >= a >= c:
-                                return d, b, a, c
-                            else: #b>c>a 
-                                if b >= c >= a:
-                                    return d, b, c, a
-                                else: #c>a>b
-                                    if c >= a >= b:
-                                        return d, c, a, b
-                                    else:   #c>b>a
-                                            return d, c, b, a  
+                # d >= a and d >= b and d >= c:
+                 #a>b>c
+                if a >= b >= c:
+                    return d, a, b, c
+                else: #a>c>b
+                    if a >= c >= b:
+                        return d, a, c, b
+                    else: #b>a>c 
+                        if b >= a >= c:
+                            return d, b, a, c
+                        else: #b>c>a 
+                            if b >= c >= a:
+                                return d, b, c, a
+                            else: #c>a>b
+                                if c >= a >= b:
+                                    return d, c, a, b
+                                else: #c>b>a
+                                    return d, c, b, a  
 
 # Print the 4 numbers from highest to lowest using only if-else statement.
 first, second, third, fourth = getNumber()
